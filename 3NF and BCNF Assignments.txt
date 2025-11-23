@@ -1,0 +1,193 @@
+Q1)
+create table student (
+  stud_id int,
+  stud_name varchar(50),
+  dept_id int
+);
+
+create table department (
+  dept_id int,
+  dept_name varchar(50),
+  hod_id int
+);
+
+create table hod (
+  hod_id int,
+  hod_name varchar(50)
+);
+
+
+Q2)
+create table emp (
+  emp_id int,
+  emp_name varchar(50)
+);
+
+create table project (
+  proj_id int,
+  proj_name varchar(50),
+  client_id int
+);
+
+create table client (
+  client_id int,
+  client_name varchar(50)
+);
+
+create table emp_project (
+  emp_id int,
+  proj_id int
+);
+
+
+Q3)
+create table book (
+  book_id int,
+  book_title varchar(100),
+  author_id int,
+  publisher_id int
+);
+
+create table author (
+  author_id int,
+  author_name varchar(50)
+);
+
+create table publisher (
+  publisher_id int,
+  publisher_name varchar(50)
+);
+
+
+Q4)
+create table sales (
+  sale_id int,
+  product_id int
+);
+
+create table product (
+  product_id int,
+  product_name varchar(50),
+  category varchar(50)
+);
+
+create table category (
+  category varchar(50),
+  category_discount int
+);
+
+
+Q5)
+create table student (
+  roll_no int,
+  stud_name varchar(50)
+);
+
+create table course (
+  course_id int,
+  course_name varchar(50),
+  credits int
+);
+
+create table enroll (
+  roll_no int,
+  course_id int
+);
+
+
+Q6)
+create table course (
+  course_code varchar(20),
+  course_name varchar(50),
+  faculty_id int
+);
+
+create table faculty (
+  faculty_id int,
+  faculty_name varchar(50),
+  room_no int
+);
+
+
+Q7)
+create table orders (
+  order_id int,
+  cust_id int
+);
+
+create table customer (
+  cust_id int,
+  cust_name varchar(50),
+  city varchar(50)
+);
+
+create table city_pincode (
+  city varchar(50),
+  pincode int
+);
+
+
+Q8)
+create table student (
+  student_id int,
+  student_name varchar(50),
+  room_no int
+);
+
+create table room (
+  room_no int,
+  warden_id int
+);
+
+create table warden (
+  warden_id int,
+  warden_name varchar(50)
+);
+
+
+Q9)
+create table doctor (
+  doc_id int,
+  doc_name varchar(50)
+);
+
+create table patient (
+  patient_id int,
+  patient_name varchar(50),
+  disease varchar(50),
+  room_no int
+);
+
+create table room (
+  room_no int,
+  room_type varchar(50)
+);
+
+create table doc_patient (
+  doc_id int,
+  patient_id int
+);
+
+	
+Q10)
+create table orders (
+  order_id int,
+  cust_id int
+);
+
+create table order_item (
+  order_id int,
+  item_id int,
+  item_name varchar(50)
+);
+
+create table customer (
+  cust_id int,
+  cust_name varchar(50),
+  city varchar(50)
+);
+
+create table city_pincode (
+  city varchar(50),
+  pincode int
+);
