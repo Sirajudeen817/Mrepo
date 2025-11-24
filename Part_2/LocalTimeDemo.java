@@ -1,0 +1,45 @@
+package com.test.Nov24.Part2.Part_2;
+
+import java.time.DateTimeException;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.concurrent.atomic.LongAccumulator;
+
+public class LocalTimeDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LocalTime time=LocalTime.now();
+		System.out.println(time);
+		
+		LocalTime t1=LocalTime.of(9, 30);
+        System.out.println(t1);
+        
+        LocalTime t2=LocalTime.of(10, 45,39);
+        System.out.println(t2);
+        
+        System.out.println(time.getHour());
+        System.out.println(time.getMinute());
+        System.out.println(time.getSecond());
+        
+        
+        //Converting string to localTime
+        String strTime="11:35:20";
+        LocalTime convertedTime=LocalTime.parse(strTime);
+        System.out.println(convertedTime);
+        
+        
+        //converting to specific format
+        DateTimeFormatter df=DateTimeFormatter.ofPattern("hh:mm:ss a");
+        String formatedTime=time.format(df);
+        System.out.println(formatedTime);
+        
+        
+        
+        System.out.println(LocalTime.MIN);
+        System.out.println(LocalTime.MAX);
+        System.out.println(LocalTime.NOON);
+	}
+
+}
