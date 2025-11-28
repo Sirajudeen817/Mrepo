@@ -1,0 +1,45 @@
+package com.demo.Nov27;
+
+public class DemoOnStackUsingArray {
+	
+	private static int[] nums=new int[10];
+	private static int top=-1;
+	
+	public  static boolean isEmpty() {
+		return top==-1;
+	}
+	public static boolean isFull() {
+		return top==10;
+	}
+	
+	public static void push(int ele) {
+		if(isFull())
+			System.out.println("Stack Overflow");
+		else
+			nums[++top]=ele;
+	}
+	
+	public static void pop() {
+		if(isEmpty())
+			System.out.println("Stack Underflow");
+		else
+			System.out.println(nums[top--]);
+	}
+	public static void display() {
+		for(int i:nums)
+			System.out.print(i);
+	}
+	
+	public static void peek() {
+		System.out.println(nums[top]);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		pop();
+		push(10);
+		display();
+		peek();
+
+	}
+
+}
